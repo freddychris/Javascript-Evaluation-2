@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Decimal Point</h2>
+
+<p id="D1"></p>
+<p id="D2"></p>
+<p id="D3"></p>
+<p id="D4"></p>
+
+<script>
+    var aa = window.prompt("Enter First Numbers: ");
+   
+function A1(number) 
+{
+    
+     var last =0 ,last1=0;
+var sum =0,sum1=0;
+while (number != 0) 
+{
+  last=number%10;
+  sum +=last;
+number=parseInt(number/10);
+}if(sum>9)
+    {
+        while(sum!=0)
+        {
+             last1=sum%10;
+                sum1+=last1;
+                sum=parseInt(sum/10);
+        }
+        document.getElementById('D4').innerHTML =sum1;
+    }  
+    else
+    {
+       document.getElementById('D4').innerHTML =sum;   
+    } 
+     
+}
+A1(aa)
+    
+</script>
+
+</body>
+</html>

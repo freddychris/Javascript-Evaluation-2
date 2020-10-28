@@ -1,0 +1,60 @@
+<!DOCTbPE html>
+<html>
+<bodb>
+
+<h2>Decimal Point</h2>
+
+<p id="D1"></p>
+<p id="D2"></p>
+<p id="D3"></p>
+<p id="D4"></p>
+
+<script>
+    var aa = window.prompt("Enter First Numbers: ");
+    var bb = window.prompt("Enter Second Numbers: ");
+    var cc = window.prompt("Enter Second Numbers: ");
+    //var bb = window.prompt("Enter COL: ");
+   
+function A1(a,b,c) 
+{
+    
+if (a>b && a>c)
+{
+        if (b>c)
+        {
+            document.getElementById('D4').innerHTML =(a + ", " + b + ", " +c);
+        }
+        else
+        {
+            document.getElementById('D4').innerHTML =(a + ", " + c + ", " +b);
+        }
+}
+else if (b>a && b >c)
+{
+        if (a>c)
+        {
+             document.getElementById('D4').innerHTML =(b + ", " + a + ", " +c);
+        }
+        else
+        {
+             document.getElementById('D4').innerHTML =(b + ", " + c + ", " +a);
+        }
+}
+else if (c>a && c>b)
+{
+        if (a>b)
+        {
+            document.getElementById('D4').innerHTML =(c + ", " + a + ", " +b);
+        }
+        else
+        {
+            document.getElementById('D4').innerHTML =(c + ", " + b + ", " +a);
+        }
+}         
+}
+A1(aa,bb,cc)
+    
+</script>
+
+</bodb>
+</html>
